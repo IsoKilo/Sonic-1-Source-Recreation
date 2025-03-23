@@ -5,6 +5,7 @@ An attempt at recreating Sonic 1's source code by means of extrapolating informa
 ---
 
 ![build - incomplete](https://img.shields.io/badge/build-incomplete-C00000)
+
 ![progress - 5%](https://img.shields.io/badge/progress-5%-C00000)
 
 This recreation is made with a revision 01 ROM of Sonic the Hedgehog disassembled in IDA Pro version 7.0. With some code also integrated from the prototype of Sonic the Hedgehog.
