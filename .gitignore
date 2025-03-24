@@ -1,3 +1,4 @@
 *.log
 *.sym
 *.lst
+resources/
