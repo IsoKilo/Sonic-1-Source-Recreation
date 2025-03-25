@@ -10,6 +10,24 @@ An attempt at recreating Sonic 1's source code by means of extrapolating informa
 
 This recreation is made with a revision 01 ROM of Sonic the Hedgehog disassembled in IDA Pro version 7.0. With some code also integrated from the prototype of Sonic the Hedgehog.
 
+## Progress
+
+| Status | Goal |
+| -------- | -------- |
+| Mostly complete | Uncover information about source code and pin labels and details to ROM and code. |
+| In progress | Disassemble the ROM using original labels and equates. |
+| Not started | Export disassembly into source files. |
+| Not started | Touch up details that couldn't be done in IDA. (Macros, comments, etc.) |
+| Not started | Build a functional ROM under a simulated development environment in DOS with X68k. |
+| Not started | Incorporate prototype code and data. |
+
+### Side Goals
+
+* Replicate full development environment. (Digitizer, Sound Source Editor, CMM, serial port demo recorder)
+* Build bit-perfect ROM.
+* Make branches for building revision 0 and prototype ROMs.
+* Port to C.
+
 ## Data Resources
 
 * [SEGA Mega Drive Hard Initial Program](https://drive.google.com/file/d/1HUr01ejGtCrN2KQa6t99y1c2N2wRj08_/view)
