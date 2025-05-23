@@ -16,7 +16,7 @@ This recreation is made with a revision 01 ROM of Sonic the Hedgehog disassemble
 | -------- | -------- |
 | Mostly complete | Uncover information about source code and pin labels and details to ROM and code. |
 | In progress | Disassemble the ROM using original labels and equates. |
-| Not started | Export disassembly into source files. |
+| In progress | Export disassembly into source files. |
 | Not started | Touch up details that couldn't be done in IDA. (Macros, comments, etc.) |
 | Not started | Build a functional ROM under a simulated development environment in DOS with X68k. |
 | Not started | Incorporate prototype code and data. |
