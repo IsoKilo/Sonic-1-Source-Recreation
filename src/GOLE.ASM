@@ -3,9 +3,8 @@
 	include	macros.lib
 	list on
 
-	extern	actionsub,actwkchk,frameout,patchg,bgmset,soundset
-	extern	ring_act,ringpat
-	public	gole,golepat
+	extern	actionsub,actwkchk,frameout,patchg,bgmset,soundset,ringpat
+	public	gole,golesub,golepat
 
 ;------------------------------------------------------------------------------
 gole:
@@ -98,23 +97,24 @@ golepositbl:
 	dc.b	24,16
 golemove3:
 	tst.w	editmode
-	bne.w	?end
+	bne.w	goleend
 	btst.b	#1,playerwk+cddat
 	bne.b	?jump0
 	move.b	#1,plautoflag
 	move.w	#$0800,swdata
 ?jump0:
-	tst.b	playerwk+actno
+	tst.b	playerwk
 	beq.b	?jump1
 	move.w	playerwk+xposi,d0
 	move.w	scralim_right,d1
 	addi.w	#$0128,d1
 	cmp.w	d1,d0
-	bcs.b	?end
+	bcs.b	goleend
 ?jump1:
 	addq.b	#word,r_no0(a0)
+golesub:
 	tst.b	actwk+$5c0+actno
-	bne.b	?end
+	bne.b	goleend
 	move.w	scralim_right,scralim_left
 	clr.b	plpower_m
 	clr.b	pltime_f
@@ -141,7 +141,7 @@ golemove3:
 	move.w	d0,ringbonus
 	move.w	#$008e,d0
 	jsr	soundset
-?end:
+goleend:
 	rts
 timebonustbl:
 	dc.w	5000
