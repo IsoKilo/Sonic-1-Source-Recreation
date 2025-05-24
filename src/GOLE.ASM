@@ -63,7 +63,7 @@ golemove2:
 	bpl.b	?end
 	move.w	#11,$32(a0)
 	moveq	#0,d0
-	move.b	#34(a0),d0
+	move.b	$34(a0),d0
 	addq.b	#2,$34(a0)
 	andi.b	#14,$34(a0)
 	lea	golepositbl(pc,d0.w),a2
@@ -190,25 +190,25 @@ golepat:
 	dc.w	golesp4-golepat
 golesp0:
 	dc.b	03
-	dc.b	$F0,$0B,$00,$00,$E8	;1:
-	dc.b	$F0,$0B,$08,$00,$00	;2:
-	dc.b	$10,$0B,$08,$38,$FC	;3:
+	dc.b	$f0,$0b,$00,$00,$e8	;1:
+	dc.b	$f0,$0b,$08,$00,$00	;2:
+	dc.b	$10,$0b,$08,$38,$fc	;3:
 golesp1:
 	dc.b	02
-	dc.b	$F0,$0F,$00,$0C,$F0	;1:
-	dc.b	$10,$01,$00,$38,$FC	;2:
+	dc.b	$f0,$0f,$00,$0c,$f0	;1:
+	dc.b	$10,$01,$00,$38,$fc	;2:
 golesp2:
 	dc.b	02
-	dc.b	$F0,$03,$00,$1C,$FC	;1:
-	dc.b	$10,$01,$08,$38,$FC	;2:
+	dc.b	$f0,$03,$00,$1c,$fc	;1:
+	dc.b	$10,$01,$08,$38,$fc	;2:
 golesp3:
 	dc.b	02
-	dc.b	$F0,$0F,$08,$0C,$F0	;1:
-	dc.b	$10,$01,$08,$38,$FC	;2:
+	dc.b	$f0,$0f,$08,$0c,$f0	;1:
+	dc.b	$10,$01,$08,$38,$fc	;2:
 golesp4:
 	dc.b	03
-	dc.b	$F0,$0B,$00,$20,$E8	;1:
-	dc.b	$F0,$0B,$00,$2C,$00	;2:
-	dc.b	$10,$01,$00,$38,$FC	;3:
+	dc.b	$f0,$0b,$00,$20,$e8	;1:
+	dc.b	$f0,$0b,$00,$2c,$00	;2:
+	dc.b	$10,$01,$00,$38,$fc	;3:
 
 	end

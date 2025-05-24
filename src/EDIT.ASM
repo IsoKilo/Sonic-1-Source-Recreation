@@ -17,7 +17,7 @@
 	extern	actionsub,actwkchk,frameout,playpat
 	extern	flicpat,usagipat,pengpat,azarpat,fbutapat,niwapat,risupat
 
-	xdef	edit
+	public	edit
 
 ;------------------------------------------------------------------------------
 edit:
